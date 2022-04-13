@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "0945da0a-a56f-4023-ab89-dd31a448d505",
+		"name": "teste WebMotors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://desafioonline.webmotors.com.br/api/OnlineChallenge/Make",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://desafioonline.webmotors.com.br/api/OnlineChallenge/model?Makeid=2",
+					"protocol": "https",
+					"host": [
+						"desafioonline",
+						"webmotors",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"OnlineChallenge",
+						"model"
+					],
+					"query": [
+						{
+							"key": "Makeid",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://desafioonline.webmotors.com.br/api/OnlineChallenge/Make/Model",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://desafioonline.webmotors.com.br/api/OnlineChallenge/Version?ModelID=2",
+					"protocol": "https",
+					"host": [
+						"desafioonline",
+						"webmotors",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"OnlineChallenge",
+						"Version"
+					],
+					"query": [
+						{
+							"key": "ModelID",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://desafioonline.webmotors.com.br/api/OnlineChallenge/Version?ModelID=2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://desafioonline.webmotors.com.br/api/OnlineChallenge/Version?ModelID=2",
+					"protocol": "https",
+					"host": [
+						"desafioonline",
+						"webmotors",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"OnlineChallenge",
+						"Version"
+					],
+					"query": [
+						{
+							"key": "ModelID",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://desafioonline.webmotors.com.br/api/OnlineChallenge/Vehicles?Page=2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://desafioonline.webmotors.com.br/api/OnlineChallenge/Vehicles?Page=2",
+					"protocol": "https",
+					"host": [
+						"desafioonline",
+						"webmotors",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"OnlineChallenge",
+						"Vehicles"
+					],
+					"query": [
+						{
+							"key": "Page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
